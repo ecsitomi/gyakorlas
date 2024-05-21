@@ -1,0 +1,12 @@
+composer create-project laravel/laravel NÉV
+(composer install)
+php artisan install:api
+php artisan make:model NÉV --all
+php artisan migrate
+php artisan make:controller API/NÉV --api
+php artisan serve
+
+npm create vite@latest
+npm install
+npm install bootstrap
+npm run dev
