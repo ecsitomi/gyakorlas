@@ -19,7 +19,7 @@ class RentalFactory extends Factory
     {
         $bookId = Book::all()->pluck("id"); //Book ID lekérdezés és lista létrehozás
         $startDate = fake()->dateTimeBetween('-1 year')->format("Y-m-d");
-        $endDate = date("Y-m-d", strtotim($startDate, "+1 week"))
+        $endDate = date("Y-m-d", strtotime($startDate, "+1 week"))
 
         return [
             "book_id" =>fake()->randomElement($bookId), //véletlen választ a bookID listából
