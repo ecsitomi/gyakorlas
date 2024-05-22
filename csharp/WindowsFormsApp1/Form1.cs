@@ -63,7 +63,8 @@ namespace WindowsFormsApp1
             }
             catch  (MySqlException ex)
             {
-                MessageBox.Show("Hiba történt az adatbázis kapcsolat létrehozásakor");
+                MessageBox.Show(ex.Message,"Hiba történt az adatbázis kapcsolat létrehozásakor");
+                
                 this.Close();
             }
         }
